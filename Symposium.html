@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symposium Registration</title>
+</head>
+<body style="background-color:rgb(227, 158, 190);">
+    <center>  
+        <img src="Jain FET logo header.png" alt="Jain FET logo" height="115" width="400">
+        <h1>Symposium Registration</h1>
+        <img src="symposium_banner.png" alt="Symposium Banner" height="155px">
+        <p> <b>Join us for an exciting symposium featuring paper presentations, quizzes, and more!</b></p>
+            <hr>
+
+            <form action="registration_process.php" method="post">
+            <fieldset>
+                <legend>Participant Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">Participant Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="branch">Branch:</label></td>
+                        <td><input type="text" id="branch" name="branch" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="college">College Name:</label></td>
+                        <td><input type="text" id="college" name="college" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Communication Address:</label></td>
+                        <td><textarea id="address" name="address" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile Number:</label></td>
+                        <td><input type="tel" id="mobile" name="mobile" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age:</label></td>
+                        <td><input type="number" id="age" name="age" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">State:</label></td>
+                        <td><input type="text" id="state" name="state" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender:</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="Female" required>
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="Other" required>
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="events">Events:</label></td>
+                        <td>
+                            <select id="events" name="events" multiple required>
+                                <option value="Paper Presentation">Paper Presentation</option>
+                                <option value="Quiz">Quiz</option>
+                                <!-- Add more event options as needed -->
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit</button>
+            </form>
+    </center> 
+</body>
+</html>

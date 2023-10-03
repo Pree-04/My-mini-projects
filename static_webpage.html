@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Static Web Page</h1>
+    </header>
+    <div class="container">
+        <p>This is a simple static webpage.</p>
+        <p>Click the button below:</p>
+        <button id="myButton">Click me!</button>
+        <p id="outputText"></p>
+    </div>
+
+    <script>
+        // JavaScript code for interactivity
+        document.getElementById("myButton").addEventListener("click", function () {
+            document.getElementById("outputText").textContent = "Button clicked!";
+        });
+    </script>
+</body>
+</html>
